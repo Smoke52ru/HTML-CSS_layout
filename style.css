@@ -1,0 +1,210 @@
+
+a, p, input, h1,h2,h3,h4,h5,h6 {
+    font-family: Helios;
+    color: #73695F;
+    line-height: 1.3;
+}    
+h1, h2, h3, h4, h5, h6 {
+    font-weight: bold;
+    text-transform: uppercase;
+}
+h1 {
+    margin-top: 0;
+    line-height: 49px;
+    font-size: 28px;
+}
+h3 {
+    font-size: 20px;
+}
+a {
+    font-size: 16px;
+
+}
+body {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    min-height: 1550px;
+    margin: 0;
+
+    background: scroll url(content/klyaksa.png) 50% 0% no-repeat,
+                linear-gradient(180deg, #BDE4DF 0.81%, #F9F7E8 52%),
+                #FFFFFF;
+    background-size: 100%;
+}
+header {
+    display: flex;
+    justify-content: center;
+    align-self: center;
+    flex-flow: row wrap;
+    margin-bottom: 50px;
+    max-width: 1024px;
+}
+header > .logo > a > img { 
+    min-width: 200px;
+    image-rendering: crisp-edges;    
+}
+
+header > .head {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-self: flex-end;
+}
+header > .head > .searchbar {
+    display: inline;
+    align-self: flex-end;
+    padding: 3px;
+    margin: 10px;
+}
+header > .head > .searchbar > input[type="search"] {
+    border: 0;
+    padding: 3px;
+    background: #FFFFFF;
+    box-sizing: border-box;
+    border-radius: 15px;
+}
+header > .head > .searchbar > input:focus {
+    outline: none;
+}
+header > .head > .searchbar > input[type="submit"] {
+    position: relative;
+    left: -20px;
+    top: -1px;
+    width: 30px;
+    height: 30px;
+    border: none;
+    border-radius: 50%;
+    background: #808080;
+    box-shadow: 0 0 0 1.5px #fff, 0 0 0 2.5px #888;
+    box-sizing: border-box;
+    color: #FFFFFF;
+    font-size: 10px;
+}
+header nav {
+    display: inline;
+    margin: 10px;
+}
+header nav > a, 
+header nav > .divider {
+    text-decoration: none;
+    font-size: 20px;
+} 
+
+
+
+
+
+main {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-content: center;
+    flex: 1 0 auto;
+    min-width: 360px;
+    margin-bottom: 50px;
+}
+main > .video {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    align-self: center;
+    max-width: 1024px;
+}
+main > .video > video {
+    border: 4px solid #FFFFFF;
+    box-sizing: border-box;
+    filter: drop-shadow(0px 10px 20px rgba(0, 0, 0, 0.5));
+    margin-bottom: 20px;
+    width: 100%;
+    height: auto;
+    max-height: 100%;
+    min-width: 200px;
+    max-width: 1024px;
+}
+main > .publications {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+main > .publications > .column {
+    display: flex;
+    margin: 15px;
+    flex-direction: column;
+    align-items: flex-start;
+    flex: 0 0 300px;
+}
+main > .publications > .column > img {
+    width: 300px;
+    height: 156px;
+    margin-bottom: 12px;
+    border: 4px solid #FFFFFF;
+    box-sizing: border-box;
+    filter: drop-shadow(0px 7px 5px rgba(0, 0, 0, 0.2));
+}
+main > .publications > .column > a {
+    display: flex;
+    flex-flow: row nowrap;
+    width: auto;
+    color: #028CC2;
+    text-decoration: none;
+    text-transform: uppercase;
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+main > .publications > .column  h3 {
+    color: #FC8004;
+    margin: 0;
+}
+main > .publications > .column > a > img {
+    height: 26px;
+    padding: 4.5px;
+    margin-left: 5px;
+    border-radius: 50%;
+    background: linear-gradient(180deg, #FBC48D 0%, #FC8004 100%), #FC8004;
+    border: 1.5px solid #FFFFFF;
+    box-sizing: border-box;
+    box-shadow: 0 0 0 1.5px #fff, 0 0 0 2.5px #FC8004;
+}
+main > .publications > .column > .divider {
+    display: block;
+    border: 1px solid #73695F;
+    width: 100%;
+}
+
+
+
+footer {
+    display: flex;
+    flex-shrink: 0;
+    background: #504E4A;
+    width: 100%;
+    min-height: 30px;
+    min-width: 800px;
+}
+footer h3 {
+    color: white;
+}
+footer a {
+    color:#AAA7A4;
+    margin-bottom: 3px;
+}
+footer > .foot {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    flex-grow: 1;
+    margin-left: 15%;
+    margin-right: 15%;
+    margin-top: 70px;
+    margin-bottom: 70px;
+}
+footer > .foot > .column {
+    display: flex;
+    flex-direction: column;
+    margin: 3%;
+}
+footer > .foot > .column > a {
+    font-size: 14px;
+}
